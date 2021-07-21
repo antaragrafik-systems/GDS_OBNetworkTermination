@@ -108,23 +108,23 @@ namespace GDS_OBNetworkTermination
                         while (dr_SegmentDetails.Read())
                         {
                             //Store data from executed query into variables
-                            string ACTION_TYPE = (!dr_SegmentDetails.IsDBNull(0)) ? dr_SegmentDetails.GetString(0) : "";
-                            string FEAT_TYPE = (!dr_SegmentDetails.IsDBNull(1)) ? dr_SegmentDetails.GetString(1) : "";
-                            string EXC_ABB = (!dr_SegmentDetails.IsDBNull(2)) ? dr_SegmentDetails.GetString(2) : "";
-                            string IPID = (!dr_SegmentDetails.IsDBNull(3)) ? dr_SegmentDetails.GetDecimal(3).ToString() : "";
-                            string BND_IPID = (!dr_SegmentDetails.IsDBNull(4)) ? dr_SegmentDetails.GetDecimal(4).ToString() : "";
-                            string FEAT_CODE = (!dr_SegmentDetails.IsDBNull(5)) ? dr_SegmentDetails.GetString(5) : "";
-                            string PDDP_IPID = (!dr_SegmentDetails.IsDBNull(6)) ? dr_SegmentDetails.GetDecimal(6).ToString() : "";
-                            string PDP_IPID = (!dr_SegmentDetails.IsDBNull(7)) ? dr_SegmentDetails.GetDecimal(7).ToString() : "";
-                            string CAB_IPID = (!dr_SegmentDetails.IsDBNull(8)) ? dr_SegmentDetails.GetDecimal(8).ToString() : "";
-                            string RT_TYPE = (!dr_SegmentDetails.IsDBNull(9)) ? dr_SegmentDetails.GetString(9) : "";
-                            string FDP_CLASS = (!dr_SegmentDetails.IsDBNull(10)) ? dr_SegmentDetails.GetString(10) : "";
-                            string FDC_IPID = (!dr_SegmentDetails.IsDBNull(11)) ? dr_SegmentDetails.GetDecimal(11).ToString() : "";
-                            string FDC_CODE = (!dr_SegmentDetails.IsDBNull(12)) ? dr_SegmentDetails.GetString(12) : "";
-                            string ADDRESS = (!dr_SegmentDetails.IsDBNull(13)) ? dr_SegmentDetails.GetString(13) : "";
-                            string COOR_X = (!dr_SegmentDetails.IsDBNull(14)) ? dr_SegmentDetails.GetDecimal(14).ToString() : "";
-                            string COOR_Y = (!dr_SegmentDetails.IsDBNull(15)) ? dr_SegmentDetails.GetDecimal(15).ToString() : "";
-                            string NETWORK_ID = (!dr_SegmentDetails.IsDBNull(16)) ? dr_SegmentDetails.GetDecimal(16).ToString() : "";
+                            string ACTION_TYPE = (!dr_SegmentDetails.IsDBNull(0)) ? dr_SegmentDetails.GetString(0).Trim() : "";
+                            string FEAT_TYPE = (!dr_SegmentDetails.IsDBNull(1)) ? dr_SegmentDetails.GetString(1).Trim() : "";
+                            string EXC_ABB = (!dr_SegmentDetails.IsDBNull(2)) ? dr_SegmentDetails.GetString(2).Trim() : "";
+                            string IPID = (!dr_SegmentDetails.IsDBNull(3)) ? dr_SegmentDetails.GetDecimal(3).ToString().Trim() : "";
+                            string BND_IPID = (!dr_SegmentDetails.IsDBNull(4)) ? dr_SegmentDetails.GetDecimal(4).ToString().Trim() : "";
+                            string FEAT_CODE = (!dr_SegmentDetails.IsDBNull(5)) ? dr_SegmentDetails.GetString(5).Trim() : "";
+                            string PDDP_IPID = (!dr_SegmentDetails.IsDBNull(6)) ? dr_SegmentDetails.GetDecimal(6).ToString().Trim() : "";
+                            string PDP_IPID = (!dr_SegmentDetails.IsDBNull(7)) ? dr_SegmentDetails.GetDecimal(7).ToString().Trim() : "";
+                            string CAB_IPID = (!dr_SegmentDetails.IsDBNull(8)) ? dr_SegmentDetails.GetDecimal(8).ToString().Trim() : "";
+                            string RT_TYPE = (!dr_SegmentDetails.IsDBNull(9)) ? dr_SegmentDetails.GetString(9).Trim() : "";
+                            string FDP_CLASS = (!dr_SegmentDetails.IsDBNull(10)) ? dr_SegmentDetails.GetString(10).Trim() : "";
+                            string FDC_IPID = (!dr_SegmentDetails.IsDBNull(11)) ? dr_SegmentDetails.GetDecimal(11).ToString().Trim() : "";
+                            string FDC_CODE = (!dr_SegmentDetails.IsDBNull(12)) ? dr_SegmentDetails.GetString(12).Trim() : "";
+                            string ADDRESS = (!dr_SegmentDetails.IsDBNull(13)) ? dr_SegmentDetails.GetString(13).Trim() : "";
+                            string COOR_X = (!dr_SegmentDetails.IsDBNull(14)) ? dr_SegmentDetails.GetDecimal(14).ToString().Trim() : "";
+                            string COOR_Y = (!dr_SegmentDetails.IsDBNull(15)) ? dr_SegmentDetails.GetDecimal(15).ToString().Trim() : "";
+                            string NETWORK_ID = (!dr_SegmentDetails.IsDBNull(16)) ? dr_SegmentDetails.GetDecimal(16).ToString().Trim() : "";
                             string ROWID = dr_SegmentDetails.GetString(17);
                             
                             //Prepare first part of line
