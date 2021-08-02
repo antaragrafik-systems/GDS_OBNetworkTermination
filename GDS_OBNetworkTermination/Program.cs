@@ -205,7 +205,7 @@ namespace GDS_OBNetworkTermination
 
                             #endregion
 
-                            if (line.EndsWith("|")) line.TrimEnd('|');
+                            if (line.EndsWith("|")) line = line.TrimEnd('|');
 
                             //Add line to list of output lines
                             lines.Add(line);
