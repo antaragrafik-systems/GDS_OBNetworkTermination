@@ -304,7 +304,7 @@ namespace GDS_OBNetworkTermination
             }
             else
             {
-                error += "Please enter connection string.\nExample: \"Provider = OraOLEDB.Oracle; Data Source = NEPSTRN; User Id = NEPSBI; Password = xs2nepsbi\"";
+                error += "Please enter connection string.\nExample: \"Provider = OraOLEDB.Oracle; Data Source = NEPSTRN; User Id = NEPSBI; Password = password\"";
             }
 
             if(error != "")
